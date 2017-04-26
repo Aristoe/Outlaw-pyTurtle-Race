@@ -1,10 +1,22 @@
 # Outlaw-pyTurtle-Race
-Turtle Race in Python 2.7
+# Turtle Race in Python 2.7
 
 import turtle
 import random
 wn = turtle.Screen()
 wn.bgcolor('lightgrey')
+
+filler = turtle.Turtle()
+filler.color('white')
+filler.up()
+filler.goto(225,125)
+filler.down()
+filler.begin_fill()
+filler.goto(225,-75)
+filler.goto(-325,-75)
+filler.goto(-325,125)
+filler.goto(225,125)
+filler.end_fill()
 
 waylon = turtle.Turtle()    #define 4 turtles and finish
 willie = turtle.Turtle()
@@ -34,7 +46,7 @@ finish.up()                 #Get Set!
 finish.goto(200,125)
 finish.down()
 finish.right(90)
-finish.forward(200)
+finish.forward(201)
 finish.up()
 finish.goto(233,25)
 finish.right(90)
